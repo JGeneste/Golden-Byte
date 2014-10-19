@@ -1,11 +1,21 @@
 import java.util.*;
+import java.io.*;
+
 public class TheBank
 {
     public static int option; //which option the user chooses
     private static DataBase bankData;
+    private static FileWriter dataFile; //where the data is writen
 
   public static void main(String[] args)
   {
+    try{
+
+      dataFile = new FileWriter("data.txt", true);
+    }
+    catch(IOException e){
+      System.out.println("There is a problem: "+e);
+    }
     bankData = new DataBase(); //create the bank database
     System.out.println("Welcome to the Bank");
     System.out.println("Please enter the number for the desired choice");
@@ -49,7 +59,7 @@ public class TheBank
          System.out.println("user name = "+ name +" password = "+ password);
          //create new savings account if doesn't exist
          Account savings = new Savings(name, password);
-         bankData.addAccount(name, password, savings);
+         bankData.addAccount(name, password, savings, dataFile);
          
        }
        else if(option == 2)
