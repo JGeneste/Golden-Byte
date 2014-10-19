@@ -1,22 +1,28 @@
+import java.util.*;
 
 public class DataBase
 {
 
-    private Hashmap userIdMap;
-    private Hashmap passwordMap;
+    private static Map<String, Map<String, Account>> userIdMap;
+    private static Map<String, Account> passwordMap;
     
-    public void createDataBase(String user, String password, Account a)
+    // database constructor
+    public DataBase()
     {
       //create a hash map of a hashmap. Sorted by user ID and then password
-      Map<String, Map<String, Account>> userIdMap = new Hashmap<userID,
-          Map<String, Account>> passwordMap = new HashMap<password,
-          account>();
+      userIdMap = new HashMap<String, Map<String, Account>>();
+      passwordMap = new HashMap<String,Account>();
 
     }
 
+    public void addAccount(String name, String password, Account acnt)
+    {
+      passwordMap.put(password, acnt);
+      userIdMap.put(name, passwordMap);
+    }
     public Account getAccount(String user, String password)
     {
       
-      return null;//<--temporary
+      return userIdMap.get(user).get(password);
     }
 }

@@ -1,12 +1,18 @@
 /**
  * 
  */
-package makeAccount;
+//package makeAccount;
 
 /**
- * @author Jessica
+ * @author Emerson
  *
  */
-public class Savings {
+public class Savings extends Account
+{
+
+  public Savings(String n, String p)
+  {
+    super(n,p);
+  }
 
 }
