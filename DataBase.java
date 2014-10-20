@@ -23,10 +23,13 @@ public class DataBase
       //passwordMap.put(password, acnt);
       //userIdMap.put(name, passwordMap);
       accountMap.put(name+password, acnt);
-      String tempStr = new String(name+" "+password+" ");
+      String tempStr = new String(name+" "+password+" "+ acnt.getType()+
+              " "+acnt.getAddress());
       try{
         BufferedWriter out = new BufferedWriter(d);
         out.write(tempStr, 0, tempStr.length());
+        out.newLine();
+        out.close();
         System.out.println("finished writing to file");
 
       }

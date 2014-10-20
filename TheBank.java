@@ -5,7 +5,7 @@ public class TheBank
 {
     public static int option; //which option the user chooses
     private static DataBase bankData;
-    private static FileWriter dataFile; //where the data is writen
+    private static FileWriter dataFile; //where the data is written
 
   public static void main(String[] args)
   {
@@ -42,29 +42,40 @@ public class TheBank
 
     public static void createAccount()
     {
-  
-      System.out.println("\nWhat type of account would you like to create?");
+      //String userAddr;  
       Scanner scan = new Scanner(System.in);
+      System.out.println("Please enter your home address");
+      String userAddr = scan.nextLine(); //get user address  
+     
+      System.out.println("\nWhat type of account would you like to create?");
       System.out.println("\n1: Savings\n2:Checking\n");
       
       option = scan.nextInt();
-     
+  
       System.out.println("Please enter account name without spaces");
       String name = scan.next();
       System.out.println("Please enter a password");
       String password = scan.next();
+
+
        if(option == 1)
        {
          System.out.println("Creating Savings Account");
          System.out.println("user name = "+ name +" password = "+ password);
          //create new savings account if doesn't exist
-         Account savings = new Savings(name, password);
+         Account savings = new Savings(name, password, "Savings", userAddr);
          bankData.addAccount(name, password, savings, dataFile);
          
        }
        else if(option == 2)
        {
         //create checking account
+         System.out.println("Creating Checking Account");
+
+         Account checking = new Checking(name, password, "checking",
+                 userAddr);
+         bankData.addAccount(name, password, checking, dataFile);
+
        }
        else
        System.out.println("unknown entry");
