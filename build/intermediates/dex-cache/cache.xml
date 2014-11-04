@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="/Users/jessicamcnallie/AndroidStudioProjects/LoginUsingParseSdkUpdate/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-cae73d2726feb456bc38839913704ed097e94ce1.jar"
+        jar="/Users/jessicamcnallie/AndroidStudioProjects/LoginUsingParseSdkUpdate/app/libs/Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528"/>
+    <item
+        dex="/Users/jessicamcnallie/AndroidStudioProjects/LoginUsingParseSdkUpdate/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-799c55270669dff4bfa08c1ee34b5a5d389d39a4.jar"
+        jar="/Users/jessicamcnallie/AndroidStudioProjects/LoginUsingParseSdkUpdate/app/libs/bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e"/>
+    <item
+        dex="/Users/jessicamcnallie/AndroidStudioProjects/LoginUsingParseSdkUpdate/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-2484d88715cbcdaf306e7f8449d6546e84c1520d.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156"/>
+
+</pre-dex-items>
