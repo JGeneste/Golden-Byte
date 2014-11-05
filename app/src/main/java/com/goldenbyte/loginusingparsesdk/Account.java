@@ -29,25 +29,40 @@ import com.parse.ParseAnalytics;
 import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseUser;
+import com.parse.ParseClassName;
 
 @ParseClassName("Account")
 public class Account extends ParseObject{
     boolean isSavings = true; //default to savings account
-    String name; //name of the account
+    String accountNo = "default"; //name of the account
 
+    /*
     // flag for Internet connection status
     Boolean isInternetPresent = false;
     // Connection detector class
     ConnectionDetector cd;
+    */
     /*public Account(String n, boolean isS)
     {
         name = n;
         isSavings = isS;
 
     }*/
-    public void setName(String n)
+    public void setAccountNo(String n)
     {
-        this.name=n;
+
+        if(isSavings)
+        {
+            accountNo = n;
+            System.out.println("put in Savings before");
+            put("Savings", n);
+            System.out.println("put in Savings after");
+
+        }
+        else {
+            accountNo = n;
+            put("Checking", n);
+        }
 
     }
     public void setIsSavings(boolean tf)
@@ -57,9 +72,15 @@ public class Account extends ParseObject{
     }
     public String getName()
     {
-        return this.name;
+        return this.accountNo;
     }
 
+    public String getAccountNo()
+    {
 
-
+        return getString("Savings");
+    }
 }
+
+
+

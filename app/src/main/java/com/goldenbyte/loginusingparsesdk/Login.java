@@ -113,6 +113,7 @@ public class Login extends Activity{
 	public void onCreateParse() {
         ParseObject.registerSubclass(Account.class);
 		Parse.initialize(this, "9nnstGAafsTLcaYzPl95Yzyh7dXf2ifgtNGwVdUe", "PlcXwWtuqnQRDDBMOTxm1OJs4JnFMaQU4CzgLmdV");
+        //this.temp();
 	}
 
 
@@ -207,14 +208,15 @@ public class Login extends Activity{
 
 	}
 
+
 	protected void loginSuccessful() {
 		// TODO Auto-generated method stub
-        /*final Account newAccount = new Account();
-        newAccount.setName("temporary");
-        newAccount.setIsSavings(true);
-        currUser.put("Savings", newAccount);
-        currUser.saveInBackground();*/
+
+
+        //currUser.put("Savings", newAccount);
+        //currUser.saveInBackground();*/
 		Intent in =  new Intent(Login.this,MainActivity.class);
+        //Intent in =  new Intent(Login.this,AccountMain.class); //temp trial
 		startActivity(in);
 	}
 	protected void loginUnSuccessful() {

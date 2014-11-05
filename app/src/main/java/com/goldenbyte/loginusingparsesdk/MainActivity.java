@@ -43,10 +43,12 @@ public class MainActivity extends Activity{
 
     public void getParseData()
     {
-        //Parse.initialize(this, "9nnstGAafsTLcaYzPl95Yzyh7dXf2ifgtNGwVdUe", "PlcXwWtuqnQRDDBMOTxm1OJs4JnFMaQU4CzgLmdV");
+        ParseObject.registerSubclass(Account.class);
+        Parse.initialize(this, "9nnstGAafsTLcaYzPl95Yzyh7dXf2ifgtNGwVdUe", "PlcXwWtuqnQRDDBMOTxm1OJs4JnFMaQU4CzgLmdV");
         ParseUser userData= ParseUser.getCurrentUser();
         System.out.println(userData.getEmail());
-        AccMap = (HashMap<String, ArrayList<Double>>)userData.get("Savings2");
+        this.temp();
+        /*AccMap = (HashMap<String, ArrayList<Double>>)userData.get("Savings2");
         for( String key : AccMap.keySet()) {
             ArrayList<Double> list = AccMap.get(key);
             System.out.print(key);
@@ -55,10 +57,17 @@ public class MainActivity extends Activity{
                System.out.println(list.get(i));
             }
 
-        }
+        }*/
 
     }
+    public void temp()
+    {
+        Account newAccount = new Account();
+        newAccount.setIsSavings(true);
+        newAccount.setAccountNo("123456789");
+        System.out.println("setAccountNo");
 
+    }
 
 
 }

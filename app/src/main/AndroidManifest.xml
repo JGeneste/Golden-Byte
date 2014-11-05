@@ -26,6 +26,8 @@
         <activity android:name="com.goldenbyte.loginusingparsesdk.SignUp" android:screenOrientation="portrait"></activity>
         <activity android:name="com.goldenbyte.loginusingparsesdk.MainActivity" android:screenOrientation="portrait"></activity>
    		<activity android:name="com.goldenbyte.loginusingparsesdk.ForgetParsePassword" android:screenOrientation="portrait" android:noHistory="true"></activity>
+
+
     </application>
 
 </manifest>
