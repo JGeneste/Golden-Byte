@@ -4,4 +4,34 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <TableRow
+        android:id="@+id/tableRow1"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+        <TextView
+            android:text="Account #"
+            android:layout_weight="1" android:background="#dcdcdc"
+            android:textColor="#000000"
+            android:padding="20dip" android:gravity="center"
+             />
+        <TextView
+            android:text="Balance"
+            android:layout_weight="1" android:background="#d3d3d3"
+            android:textColor="#000000"
+            android:padding="20dip" android:gravity="center"
+             />
+        <TextView
+            android:text="Transaction"
+            android:layout_weight="1" android:background="#cac9c9"
+            android:textColor="#000000"
+            android:padding="20dip" android:gravity="center"/>
+    </TableRow>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/textView2" />
+
 </LinearLayout>
