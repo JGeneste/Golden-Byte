@@ -3,6 +3,7 @@ package com.goldenbyte.loginusingparsesdk;
 import java.util.*;
 import java.util.Locale;
 import java.util.ArrayList;
+import java.lang.Double;
 import com.goldenbyte.loginusingparsesdk.ConnectionDetector;
 import com.goldenbyte.loginusingparsesdk.MainActivity;
 import com.parse.ParseException;
@@ -163,14 +164,16 @@ public class SignUp extends Activity implements OnClickListener{
         /*Account newAccount = new Account();
         newAccount.setName("temporary");
         newAccount.setIsSavings(true);*/
-        ArrayList<Double> Balance = new ArrayList<Double>();
-        Balance.add((double)585);
-        Balance.add((double)-120);
-        HashMap<String, ArrayList<Double>> AccountMap = new HashMap<String, ArrayList<Double>>();
-        AccountMap.put("008192348398", Balance);
-        AccountMap.put("008121121421", Balance);
-        //A.add("5678");
-        user.put("Savings2", AccountMap);
+        ArrayList<String> CheckingBalance = new ArrayList<String>();
+        ArrayList<String> SavingsBalance = new ArrayList<String>();
+        CheckingBalance.add(String.valueOf(0.0));
+        SavingsBalance.add(String.valueOf(0.0));
+        HashMap<String, ArrayList<String>> SavingsAccountMap = new HashMap<String, ArrayList<String>>();
+        HashMap<String, ArrayList<String>> CheckingAccountMap = new HashMap<String, ArrayList<String>>();
+        SavingsAccountMap.put("1", SavingsBalance);
+        CheckingAccountMap.put("1", CheckingBalance);
+        user.put("Savings", SavingsAccountMap);
+        user.put("Checking", CheckingAccountMap);
 
 
 		 

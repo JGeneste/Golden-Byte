@@ -7,49 +7,105 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context=".MainActivity" >
+    tools:context=".MainActivity"
+    android:id="@+id/main">
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/checking"
-        android:id="@+id/btn_Checking"
+        android:text="@string/withdraw"
+        android:id="@+id/btn_Withdraw"
         android:singleLine="true"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="88dp" />
+        android:layout_marginBottom="88dp"
+        android:contentDescription="@string/withdraw" />
 
-    <LinearLayout
-        android:orientation="horizontal"
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deposit"
+        android:id="@+id/btn_Deposit"
+        android:layout_alignTop="@+id/btn_Withdraw"
+        android:layout_toRightOf="@+id/btn_Withdraw"
+        android:layout_toEndOf="@+id/btn_Withdraw"
+        android:contentDescription="@string/deposit" />
+<!--
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Checking"
+        android:id="@+id/textView2"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="63dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Savings"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:layout_marginTop="50dp" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/CheckingBal"
+        android:layout_alignTop="@+id/textView2"
+        android:layout_alignLeft="@+id/textView5"
+        android:layout_alignStart="@+id/textView5" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/SavingsBal"
+        android:layout_alignTop="@+id/textView3"
+        android:layout_alignLeft="@+id/CheckingBal"
+        android:layout_alignStart="@+id/CheckingBal" />
+        -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Current Balance"
+        android:id="@+id/textView5"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_Withdraw"
+        android:layout_toEndOf="@+id/btn_Withdraw"
+        android:layout_marginLeft="41dp" />
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
-        android:layout_centerHorizontal="true"
-        android:background="@color/gray"
-        android:id="@+id/accounts_bar"
-        android:divider="@color/black"
-        android:dividerPadding="@dimen/activity_horizontal_margin"
-        android:layout_above="@+id/btn_Checking">
+        android:layout_gravity="center_vertical"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp"
+        android:paddingTop="164dp"
+        android:paddingBottom="84dp"
+        android:id="@+id/scroll"
+        android:layout_above="@+id/btn_Withdraw"
+        android:layout_below="@+id/textView5"
+        android:fillViewport="false">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/account_number"
-            android:id="@+id/accountNo" />
+        <LinearLayout android:layout_width="fill_parent"
+            android:layout_height= "wrap_content"
+            android:background="@color/white"
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/type"
-            android:id="@+id/account_type"
-            android:paddingLeft="@dimen/activity_horizontal_margin" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/balance"
-            android:id="@+id/account_balance"
-            android:paddingLeft="@dimen/activity_horizontal_margin" />
-    </LinearLayout>
+
+            android:id="@+id/layout"
+            android:orientation="vertical"/>
+    </ScrollView>
 
 </RelativeLayout>

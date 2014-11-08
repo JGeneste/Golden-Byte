@@ -2,22 +2,34 @@
 <pre-dex-items>
 
     <item
-        dex="/Users/anirudhchava/Documents/Golden-Byte/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-c31e965abe6ae7107606bd8ad10adec73a9092ab.jar"
-        jar="/Applications/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        dex="/Users/jessicamcnallie/CS110/Golden-Byte/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-4fb1757d282d63a817c4d2cd2e41a258eed7febf.jar"
+        jar="/Users/jessicamcnallie/CS110/Golden-Byte/app/libs/bolts-android-1.1.3.jar"
         jumboMode="false"
         revision="20.0.0"
-        sha1="44ec51e9d395a47aab135e5e1b556c0007442156"/>
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e"/>
     <item
-        dex="/Users/anirudhchava/Documents/Golden-Byte/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-50887eefea5aef0fc5feaff5e0bb7b10f3635d55.jar"
-        jar="/Users/anirudhchava/Documents/Golden-Byte/app/libs/Parse-1.7.1.jar"
+        dex="/Users/jessicamcnallie/Golden-Byte/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-464504eadb40c90fcb6def8dfd323d032eacffa0.jar"
+        jar="/Users/jessicamcnallie/Golden-Byte/app/libs/Parse-1.7.1.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="87c45f9f66da531a65f065ee32f603c7e6db1528"/>
     <item
-        dex="/Users/anirudhchava/Documents/Golden-Byte/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-14993c46dcf83fd9e40b122b437c0363efae8120.jar"
-        jar="/Users/anirudhchava/Documents/Golden-Byte/app/libs/bolts-android-1.1.3.jar"
+        dex="/Users/jessicamcnallie/Golden-Byte/app/build/intermediates/pre-dexed/debug/bolts-android-1.1.3-7959e1eee9178203da9cf3584621ccc70b5ee1e3.jar"
+        jar="/Users/jessicamcnallie/Golden-Byte/app/libs/bolts-android-1.1.3.jar"
         jumboMode="false"
         revision="20.0.0"
         sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e"/>
+    <item
+        dex="/Users/jessicamcnallie/CS110/Golden-Byte/app/build/intermediates/pre-dexed/debug/support-v4-18.0.0-2484d88715cbcdaf306e7f8449d6546e84c1520d.jar"
+        jar="/Applications/Android Studio.app/sdk/extras/android/m2repository/com/android/support/support-v4/18.0.0/support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156"/>
+    <item
+        dex="/Users/jessicamcnallie/CS110/Golden-Byte/app/build/intermediates/pre-dexed/debug/Parse-1.7.1-85b11a2678b56ce4f9a4c2b58ef9d9a8dffe50ed.jar"
+        jar="/Users/jessicamcnallie/CS110/Golden-Byte/app/libs/Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="20.0.0"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528"/>
 
 </pre-dex-items>

@@ -26,8 +26,9 @@
         <activity android:name="com.goldenbyte.loginusingparsesdk.SignUp" android:screenOrientation="portrait"></activity>
         <activity android:name="com.goldenbyte.loginusingparsesdk.MainActivity" android:screenOrientation="portrait"></activity>
    		<activity android:name="com.goldenbyte.loginusingparsesdk.ForgetParsePassword" android:screenOrientation="portrait" android:noHistory="true"></activity>
-
-
+        <activity android:name="com.goldenbyte.loginusingparsesdk.Withdraw" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.goldenbyte.loginusingparsesdk.Deposit" android:screenOrientation="portrait"></activity>
+        <activity android:name="com.goldenbyte.loginusingparsesdk.AdminActivity" android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
