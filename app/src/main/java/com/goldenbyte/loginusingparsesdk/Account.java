@@ -32,9 +32,17 @@ import com.parse.ParseUser;
 import com.parse.ParseClassName;
 
 @ParseClassName("Account")
-public class Account extends ParseObject{
+public class Account{
     boolean isSavings = true; //default to savings account
     String accountNo = "default"; //name of the account
+    ArrayList<String> transList;
+
+    public Account(ArrayList<String> list, String acntNo, boolean isSavings)
+    {
+        transList = list;
+        accountNo = acntNo;
+        this.isSavings = isSavings;
+    }
 
     /*
     // flag for Internet connection status
@@ -48,37 +56,22 @@ public class Account extends ParseObject{
         isSavings = isS;
 
     }*/
-    public void setAccountNo(String n)
-    {
+    
 
-        if(isSavings)
-        {
-            accountNo = n;
-            System.out.println("put in Savings before");
-            put("Savings", n);
-            System.out.println("put in Savings after");
-
-        }
-        else {
-            accountNo = n;
-            put("Checking", n);
-        }
-
-    }
-    public void setIsSavings(boolean tf)
-    {
-        this.isSavings = tf;
-
-    }
-    public String getName()
-    {
-        return this.accountNo;
-    }
 
     public String getAccountNo()
     {
 
-        return getString("Savings");
+        return accountNo;
+    }
+    public ArrayList<String> getTransactionList()
+    {
+       return transList;
+
+    }
+    public boolean getIsSavings()
+    {
+        return this.isSavings;
     }
 }
 
