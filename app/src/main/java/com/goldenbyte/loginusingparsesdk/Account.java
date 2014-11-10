@@ -56,7 +56,7 @@ public class Account{
         isSavings = isS;
 
     }*/
-    
+
 
 
     public String getAccountNo()
