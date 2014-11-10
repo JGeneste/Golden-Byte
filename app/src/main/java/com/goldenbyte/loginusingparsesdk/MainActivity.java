@@ -119,7 +119,7 @@ public class MainActivity extends Activity{
     }
     public void getParseData()
     {
-        ParseObject.registerSubclass(Account.class);
+        //ParseObject.registerSubclass(Account.class);
         Parse.initialize(this, "tmvsMl1TNmP2aF93btAiBYVf7vyWGMFy84Eh5tL2", "m9XxV2k5JNRNZJPTpT5LDj1dJVCxJFNjXzvEYaVS");
         ParseUser userData= ParseUser.getCurrentUser();
         CheckingAccMap = (HashMap<String, ArrayList<String>>)userData.get("Checking");
